@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        System.out.println("Test");
+        Punkt punkt = new Punkt(10,15);
+        punkt.getPunkt();
     }
 }
