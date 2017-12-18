@@ -4,13 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] tablica = new int[9];
-
-        for (int i = 0; i <= tablica.length; i++) {
-            int x = Integer.parseInt(JOptionPane.showInputDialog("Wprowadz wartosc elementu [" + i + "]"));
-            tablica[i] = x;
-            System.out.println("Wartosc elementu [" + i + "]:" + x);
+        int[] tablica = new int[21];
+        for(int i = 20; i>=1; i--) {
+            tablica[i] = i;
+            System.out.println("Wartosc elementu ["+i+"]:" + i);
         }
+
 
     }
 }
