@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 public class Punkt {
 
     private int cordX;
@@ -6,6 +7,14 @@ public class Punkt {
     public Punkt(int cordX, int cordY) {
         this.cordX = cordX;
         this.cordY = cordY;
+    }
+
+    public void ustawWspolrzedne(int X, int Y) {
+        int inputX = Integer.parseInt(JOptionPane.showInputDialog("Podaj wspolrzedna X"));
+        this.cordX = inputX;
+        int inputY = Integer.parseInt(JOptionPane.showInputDialog("Podaj wspolrzedna X"));
+        this.cordY = inputY;
+        System.out.println("Wspolrzednie pomyslnie ustawiono");
     }
 
     public void getPunkt() {
