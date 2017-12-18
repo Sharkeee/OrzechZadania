@@ -7,11 +7,11 @@ public class Main {
         int[] tablica = new int[20];
         String[] opcje = {"FOR", "WHILE"};
         int choice = JOptionPane.showOptionDialog(
-                null, //okno
-                "Ktorej petli chcesz uzyc?", //tekst
+                null,
+                "Ktorej petli chcesz uzyc?",
                 "Zadanie5",
                 JOptionPane.DEFAULT_OPTION,
-                JOptionPane.QUESTION_MESSAGE, // typ komunikatu (ikona)
+                JOptionPane.QUESTION_MESSAGE,
                 null,
                 opcje,
                 opcje[1]);
