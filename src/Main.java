@@ -4,12 +4,35 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] tablica = new int[21];
-        for(int i = 20; i>=1; i--) {
-            tablica[i] = i;
-            System.out.println("Wartosc elementu ["+i+"]:" + i);
+        int[] tablica = new int[20];
+        String[] opcje = {"FOR", "WHILE"};
+        int choice = JOptionPane.showOptionDialog(
+                null, //okno
+                "Ktorej petli chcesz uzyc?", //tekst
+                "Zadanie5",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.QUESTION_MESSAGE, // typ komunikatu (ikona)
+                null,
+                opcje,
+                opcje[1]);
+
+        switch (choice) {
+
+            case 0:
+                System.out.println("Zastosowano petle: " + opcje[choice]);
+                for (int i = 19; i >= 0; i--) {
+                    tablica[i] = i;
+                    System.out.println("Wartosc elementu [" + i + "]:" + i);
+                }
+
+            case 1:
+                System.out.println("Zastosowano petle: " + opcje[choice]);
+                int i = 19;
+                while (i >= 0) {
+                    tablica[i] = i;
+                    System.out.println("Wartosc elementu [" + i + "]: " + i);
+                    i--;
+                }
         }
-
-
     }
 }
