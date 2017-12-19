@@ -9,7 +9,7 @@ public class Main {
         int choice = JOptionPane.showOptionDialog(
                 null,
                 "Ktorej petli chcesz uzyc?",
-                "Zadanie5",
+                "Zadanie 5 //Mateusz Orzeszyna",
                 JOptionPane.DEFAULT_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
                 null,
